@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    padding:0;
+    margin:0;
+    background-color: black;
+}
+#text
+{
+    color:white;
+    font-size:40px;
+    text-align:center;
+    margin-top:100px;
+}
+
+
+    </style>
+</head>
+<body>
+   <div id="text">
+
+   </div> 
+</body>
+<script>
+    var val="Welcome to the tech valley";
+    var i=0;
+  var b =setInterval(typing,100);
+  function typing()
+  {
+      if(i<val.length)
+      {
+          document.getElementById('text').innerHTML+=val.charAt(i);
+          i++
+      }
+      else{
+          clearInterval(b);
+      }
+  }
+ 
+
+
+
+
+  
+</script>
+</html>
